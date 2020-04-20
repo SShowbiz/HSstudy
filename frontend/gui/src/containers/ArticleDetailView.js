@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import { Card } from 'antd';
+import { Button, Card } from 'antd';
 
+import CustomForm from '../components/Form';
 class ArticleDetail extends React.Component {
     state = {
         article: {}
@@ -17,11 +18,30 @@ class ArticleDetail extends React.Component {
             })
     }
 
+    handleDelete = (event) => {
+        const articleID = this.props.match.params.articleID;
+        axios.delete(`http://127.0.0.1:8000/api/${articleID}/`)
+            .then(res => {console.log(res); window.location.reload();})
+            .catch(error => console.error(error));
+
+        this.props.history.push('/');
+        this.forceUpdate();
+    }
+
     render() {
         return (
-            <Card title = {this.state.article.title}>
-                <p>{this.state.article.content} </p>
-            </Card>
+            <div>
+                <Card title = {this.state.article.title}>
+                    <p>{this.state.article.content} </p>
+                </Card>
+                <CustomForm
+                    requestType = "put"
+                    articleID = {this.props.match.params.articleID}
+                    butnText = "Update"/>
+                <form>
+                    <Button onClick={this.handleDelete} type = "danger" htmlType = "submit">Delete</Button>
+                </form>
+            </div>
         )
     }
 }
