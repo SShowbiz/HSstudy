@@ -1,15 +1,6 @@
 import React from 'react';
 import { List, Avatar } from 'antd';
-import { MessageOutlined, LikeOutlined, StarOutlined } from '@ant-design/icons';
 
-
-
-const IconText = ({ icon, text }) => (
-  <span>
-    {React.createElement(icon, { style: { marginRight: 8 } })}
-    {text}
-  </span>
-);
 
 const Articles = (props) => {
     return (

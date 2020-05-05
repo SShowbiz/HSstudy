@@ -28,6 +28,7 @@ class CustomForm extends React.Component {
                 })
                 .then(res => {console.log(res); window.location.reload();})
                 .catch(error => console.error(error));
+            default:
         }
     }
     render() {
