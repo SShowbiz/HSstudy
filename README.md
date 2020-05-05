@@ -26,7 +26,7 @@
 - Scripts directory에서 아래와 같이 입력.  
 ```(env) HSstudy2\backend\src>python manage.py runserver```  
 - 아래와 같이 나타나면 성공.
-![image01](./image/image01.jpg)
+![image01](./image/image01.JPG)
 
 ### 실행(frontend)
 
@@ -35,7 +35,7 @@
 - Scripts directory에서 아래와 같이 입력.  
 ```HSstudy2\frontend\gui>npm start```
 - 아래와 같이 나타나면 성공.
-![image02](./image/image02.jpg)
+![image02](./image/image02.JPG)
 
 ## 결과 확인 및 구현 기능
 
@@ -43,27 +43,27 @@
 
 - http://localhost:3000/ 에 접속하여 확인.
 - 아래와 같이 기본 페이지가 나타나면 성공.
-![image03](./image/image03.jpg)
+![image03](./image/image03.JPG)
 
 ### 구현 기능
 
 #### 1. Create
 - 기본 페이지에서 Create an article 밑의 Title과 Content 항목을 채워 넣고 Create 버튼을 누르면 article이 생성.
-![image04](./image/image04.jpg) Create article 창
-![image06](./image/image06.jpg) 새 article이 생성된 모습
+![image04](./image/image04.JPG) Create article 창
+![image06](./image/image06.JPG) 새 article이 생성된 모습
 
 #### 2. Read
 - 기본 페이지에서 생성된 article의 title을 클릭하면 새로운 페이지로 이동되면서 full article을 읽을 수 있음.
-![image07](./image/image07.jpg) Full ariticle 창으로 이동된 모습
+![image07](./image/image07.JPG) Full ariticle 창으로 이동된 모습
 
 #### 3. Update
 - Full aritlce 페이지에서 하단의 title과 content에 항목을 채워 넣고 update를 누르면 article을 update할 수 있음.
-![image08](./image/image08.jpg) Update를 시도하는 모습
-![image09](./image/image09.jpg) 내용이 update된 모습
+![image08](./image/image08.JPG) Update를 시도하는 모습
+![image09](./image/image09.JPG) 내용이 update된 모습
 
 #### 4. Delete
 - Full aritlce 페이지에서 하단의 delete를 누르면 article이 삭제됨.
-![image10](./image/image10.jpg) article이 삭제된 모습
+![image10](./image/image10.JPG) article이 삭제된 모습
 
 ## 어려웠던 점, 새로웠던 점
 
